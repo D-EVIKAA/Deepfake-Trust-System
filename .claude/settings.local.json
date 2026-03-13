@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd \"C:/Users/Devika/Deepfake-Trust-System/backend\" && python -c \"\nfrom database import SessionLocal, init_db, AnalysisResult\ninit_db\\(\\)\ndb = SessionLocal\\(\\)\ncount = db.query\\(AnalysisResult\\).count\\(\\)\nrows = db.query\\(AnalysisResult\\).limit\\(3\\).all\\(\\)\nprint\\('Row count:', count\\)\nfor r in rows: print\\(' -', r.id, r.verdict, r.trust_score\\)\ndb.close\\(\\)\n\")"
+    ]
+  }
+}
